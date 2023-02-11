@@ -1,0 +1,11 @@
+.jh-plant-list{
+	/* position: relative; */
+	margin-left:  100px;
+    list-style-type: none;
+	padding: 32px;
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 800px;
+    /* background-color: red; */
+}
