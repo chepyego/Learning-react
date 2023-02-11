@@ -1,6 +1,6 @@
 .jh-plant-list{
 	/* position: relative; */
-	margin-left:  100px;
+	margin-left:  280px;
     list-style-type: none;
 	padding: 32px;
 	display: flex;
@@ -8,4 +8,8 @@
 	flex-wrap: wrap;
 	max-width: 800px;
     /* background-color: red; */
+}
+.jh-plant-category{
+	margin-left:  280px;
+
 }

@@ -15,7 +15,7 @@ function App() {
     <div >
       <Banner/>
       <div className="jh-layout">
-        <div>
+        <div className="jh-layout-main">
         {/* <QuestionForm/> */}
          <Cart  cart={cart} updateCart= {updateCart}/>
          <ShoppingList  cart={cart} updateCart={updateCart}/>
