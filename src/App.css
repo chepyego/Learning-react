@@ -1,4 +1,10 @@
 .jh-layout {
+	position: relative;
 	display: flex;
 	flex-direction: row;
+}
+
+.jh-layout-main{
+	display: flex;
+	flex-direction: column;
 }
