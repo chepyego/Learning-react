@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import React from 'react'
 
@@ -13,6 +13,11 @@ export default function Cart({cart, updateCart}) {
 
   // const  [cart, updateCart] = useState(0)
   const [isOpen, setIsOpen] = useState(true)
+
+  useEffect(() =>{
+    document.title = `JJ ${total}ksh purchases`
+
+  },[total]) //specify where you want your useEffect to apply i.e when the cart total changes
     
   return isOpen ? (
 		<div className='jh-cart'>

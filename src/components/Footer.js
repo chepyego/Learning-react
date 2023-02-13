@@ -1,12 +1,36 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import '../styles/Footer.css'
 import React from 'react'
 
 
 
-export default function Footer() {
+export default function Footer({cart, updateCart}) {
     const aYear = new Date().getFullYear()
+
+    //  useEffect(()=>{
+    //     console.log("this is a useeffect");
+
+    //  })
+    //  useEffect(()=>{
+    //     console.log("this is a useeffect");
+
+    //  },[])
+
+    //  useEffect(()=>{
+    //     console.log("this is a useeffect");
+
+    //  },[cart])ou 
+    //remember to use clear when you want to avoid memory leakage when calling useEffect
+
+     useEffect(()=>{
+        return() =>
+
+        console.log("this is returned after footer is deleted");
+
+     },[cart])
+     
+    
 
         const[inputValue, setInputValue] = useState('')
     
@@ -34,6 +58,9 @@ export default function Footer() {
           value = {inputValue}
           onBlur= {handleBlur}
         />
+        <div>
+            copy right : {aYear} designed by jemimah chepyego
+        </div>
         </footer>
         
       
